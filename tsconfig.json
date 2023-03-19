@@ -10,7 +10,6 @@
     "declaration": true,
     "removeComments": false,
     "target": "ES2020",
-    "importsNotUsedAsValues": "error",
     "isolatedModules": true,
     "exactOptionalPropertyTypes": true
   },
