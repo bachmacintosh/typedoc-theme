@@ -1,10 +1,5 @@
 import type { Application, PageEvent, RenderTemplate } from "typedoc";
-import {
-  DeclarationReflection,
-  DefaultTheme,
-  ReflectionKind,
-  UrlMapping,
-} from "typedoc";
+import { DeclarationReflection, DefaultTheme, ReflectionKind, UrlMapping } from "typedoc";
 
 interface TemplateMapping {
   /**
@@ -64,20 +59,11 @@ export class MethodsTheme extends DefaultTheme {
     },
   ];
 
-  public buildUrls(
-    reflection: DeclarationReflection,
-    urls: UrlMapping[]
-  ): UrlMapping[] {
+  public buildUrls(reflection: DeclarationReflection, urls: UrlMapping[]): UrlMapping[] {
     const mapping = this._getMyMapping(reflection);
     if (mapping) {
-      if (
-        typeof reflection.url === "undefined" ||
-        !DefaultTheme.URL_PREFIX.test(reflection.url)
-      ) {
-        const url = [
-          mapping.directory,
-          `${DefaultTheme.getUrl(reflection)}.html`,
-        ].join("/");
+      if (typeof reflection.url === "undefined" || !DefaultTheme.URL_PREFIX.test(reflection.url)) {
+        const url = [mapping.directory, `${DefaultTheme.getUrl(reflection)}.html`].join("/");
         urls.push(new UrlMapping(url, reflection, mapping.template));
 
         reflection.url = url;
@@ -99,9 +85,7 @@ export class MethodsTheme extends DefaultTheme {
     return urls;
   }
 
-  private _getMyMapping(
-    reflection: DeclarationReflection
-  ): TemplateMapping | undefined {
+  private _getMyMapping(reflection: DeclarationReflection): TemplateMapping | undefined {
     return this.myMappings.find((mapping) => {
       return reflection.kindOf(mapping.kind);
     });
