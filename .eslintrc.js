@@ -115,11 +115,7 @@ module.exports = {
     "accessor-pairs": "error",
     "arrow-body-style": ["error", "always"],
     "block-scoped-var": "error",
-    "capitalized-comments": [
-      "error",
-      "always",
-      { ignoreConsecutiveComments: true },
-    ],
+    "capitalized-comments": ["error", "always", { ignoreConsecutiveComments: true }],
     "class-methods-use-this": "error",
     complexity: ["error", complexity],
     "consistent-return": "error",
@@ -167,10 +163,7 @@ module.exports = {
     "no-lone-blocks": "error",
     "no-lonely-if": "error",
     "no-loop-func": "error",
-    "no-magic-numbers": [
-      "error",
-      { ignoreDefaultValues: true, ignore: [0, 1, "0n", "1n"] },
-    ],
+    "no-magic-numbers": ["error", { ignoreDefaultValues: true, ignore: [0, 1, "0n", "1n"] }],
     "no-mixed-operators": "error",
     "no-multi-assign": "error",
     "no-multi-str": "error",
@@ -267,14 +260,8 @@ module.exports = {
         "@typescript-eslint/array-type": ["error", { default: "array" }],
         "@typescript-eslint/ban-tslint-comment": "error",
         "@typescript-eslint/class-literal-property-style": ["error", "fields"],
-        "@typescript-eslint/consistent-generic-constructors": [
-          "error",
-          "constructor",
-        ],
-        "@typescript-eslint/consistent-indexed-object-style": [
-          "error",
-          "record",
-        ],
+        "@typescript-eslint/consistent-generic-constructors": ["error", "constructor"],
+        "@typescript-eslint/consistent-indexed-object-style": ["error", "record"],
         "@typescript-eslint/consistent-type-assertions": [
           "error",
           {
@@ -282,14 +269,8 @@ module.exports = {
             objectLiteralTypeAssertions: "never",
           },
         ],
-        "@typescript-eslint/consistent-type-definitions": [
-          "error",
-          "interface",
-        ],
-        "@typescript-eslint/consistent-type-exports": [
-          "error",
-          { fixMixedExportsWithInlineTypeSpecifier: true },
-        ],
+        "@typescript-eslint/consistent-type-definitions": ["error", "interface"],
+        "@typescript-eslint/consistent-type-exports": ["error", { fixMixedExportsWithInlineTypeSpecifier: true }],
         "@typescript-eslint/consistent-type-imports": [
           "error",
           {
@@ -298,15 +279,9 @@ module.exports = {
           },
         ],
         "@typescript-eslint/explicit-function-return-type": ["error"],
-        "@typescript-eslint/explicit-member-accessibility": [
-          "error",
-          { accessibility: "explicit" },
-        ],
+        "@typescript-eslint/explicit-member-accessibility": ["error", { accessibility: "explicit" }],
         "@typescript-eslint/explicit-module-boundary-types": "error",
-        "@typescript-eslint/member-ordering": [
-          "error",
-          { default: memberTypes },
-        ],
+        "@typescript-eslint/member-ordering": ["error", { default: memberTypes }],
         "@typescript-eslint/method-signature-style": ["error", "property"],
         "@typescript-eslint/naming-convention": [
           "error",
