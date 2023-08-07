@@ -3,14 +3,14 @@ import { DeclarationReflection, DefaultTheme, ReflectionKind, UrlMapping } from 
 
 interface TemplateMapping {
   /**
-   * {@link DeclarationReflection.kind} this rule applies to.
-   */
-  kind: ReflectionKind[];
-
-  /**
    * The name of the directory the output files should be written to.
    */
   directory: string;
+
+  /**
+   * {@link DeclarationReflection.kind} this rule applies to.
+   */
+  kind: ReflectionKind[];
 
   /**
    * The name of the template that should be used to render the reflection.
