@@ -1,6 +1,6 @@
 {
   "name": "@bachmacintosh/typedoc-theme",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "A slightly modified Typedoc theme for use with my own projects.",
   "keywords": [],
   "author": "Collin Bachman <collin@bachman.io>",
