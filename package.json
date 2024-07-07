@@ -30,10 +30,10 @@
     "eslint-plugin-import": "2.29.1",
     "prettier": "3.2.5",
     "rimraf": "5.0.7",
-    "typedoc": "0.25.13",
+    "typedoc": "0.26.3",
     "typescript": "5.3.3"
   },
   "peerDependencies": {
-    "typedoc": "^0.23.0 || ^0.24.0 || ^0.25.0"
+    "typedoc": "^0.23.0 || ^0.24.0 || ^0.25.0 || ^0.26.0"
   }
 }
